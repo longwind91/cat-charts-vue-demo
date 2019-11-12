@@ -1,9 +1,9 @@
 <template>
   <div class="chart">
-    <s-chart :data="lineData" :data-fields="dataFields" :size="[700,600]">
+    <s-chart :data="lineData" :data-fields="dataFields" :size="[700, 600]">
       <s-line :attrs="attrs" />
-      <s-axis :attrs="{orient:'left'}" />
-      <s-axis :attrs="{orient:'bottom'}" />
+      <s-axis :attrs="{ orient: 'left' }" />
+      <s-axis :attrs="{ orient: 'bottom' }" />
       <s-tooltip :attrs="tooltipAttrs" />
     </s-chart>
   </div>
