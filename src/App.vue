@@ -1,7 +1,7 @@
 <template>
   <div class="chart">
     <s-chart :data="lineData" :data-fields="dataFields" :size="[700, 600]">
-      <s-line :attrs="attrs" />
+      <s-line :attrs="attrs" :css-point="pointStyle" />
       <s-axis :attrs="{ orient: 'left' }" />
       <s-axis :attrs="{ orient: 'bottom' }" />
       <s-tooltip :attrs="tooltipAttrs" />
@@ -33,7 +33,8 @@ export default {
         row: "catgory",
         value: "sales",
         text: "date"
-      }
+      },
+      pointStyle: { strokeColor: "#fff" }
     };
   }
 };
